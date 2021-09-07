@@ -28,3 +28,5 @@ export const getDataByRole = role => {
 export const getDataByCompany = company => {
   return salaryData.filter(obj => obj.company === company);
 }
+
+export default salaryData;
