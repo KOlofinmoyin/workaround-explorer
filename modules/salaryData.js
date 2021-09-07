@@ -13,20 +13,20 @@ const salaryData = [
   { role: 'Software Engineer I', company: 'Small Data Inc.', salary: 95000},
 ];
 
-export const getRoles = () => {
+ const getRoles = () => {
   return ['CTO', 'Technical Lead', 'Software Engineer II', 'Software Engineer I'];
 }
 
-export const getCompanies = () => {
+ const getCompanies = () => {
   return ['Big Data Inc.', 'Medium Data Inc.', 'Small Data Inc.'];
 }
 
-export const getDataByRole = role => {
+ const getDataByRole = role => {
   return salaryData.filter(obj => obj.role === role);
 }
 
-export const getDataByCompany = company => {
+ const getDataByCompany = company => {
   return salaryData.filter(obj => obj.company === company);
 }
 
-export default salaryData;
+export { salaryData as default, getRoles, getCompanies, getDataByRole, getDataByCompany } ;
